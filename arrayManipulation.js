@@ -15,7 +15,29 @@ function processArray(arr) {
     });
 }
 
+// Function to format strings based on corresponding numbers
+function formatArrayStrings(strings, numbers) {
+    // Check if the lengths of the arrays match
+    if (strings.length !== numbers.length) {
+        console.error("Arrays must have the same length.");
+        return;
+    }
+
+    // Map through the arrays and modify strings based on numbers
+    return strings.map((str, index) => {
+        // Check if the corresponding number is even
+        if (numbers[index] % 2 === 0) {
+            // Capitalize the entire string
+            return str.toUpperCase();
+        } else {
+            // Convert the string to lowercase
+            return str.toLowerCase();
+        }
+    });
+}
+
 // Example usage:
-const inputArray = [1, 2, 3, 4, 5];
-const resultArray = processArray(inputArray);
-console.log(resultArray); // Output: [3, 4, 9, 16, 15]
+const stringsArray = ["Kofi", "Kwame", "Kwasi", "Kojo"];
+const processedNumbers = processArray([1, 2, 3, 4]);
+const formattedStrings = formatArrayStrings(stringsArray, processedNumbers);
+console.log(formattedStrings); // Output: ["Kofi", "Kwame", "Kwasi", "Kojo"]
