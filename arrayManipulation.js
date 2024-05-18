@@ -36,7 +36,7 @@ function formatArrayStrings(strings, numbers) {
     });
 }
 
-// Example usage:
+// Example usage :
 const stringsArray = ["Kofi", "Kwame", "Kwasi", "Kojo"];
 const processedNumbers = processArray([1, 2, 3, 4]);
 const formattedStrings = formatArrayStrings(stringsArray, processedNumbers);
