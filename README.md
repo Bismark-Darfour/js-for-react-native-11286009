@@ -1,7 +1,7 @@
 Student ID: 11286009
 
 
-# js-for-react-native-1129884
+# js-for-react-native-11286009
 202 Assignment 1
 
 Array Manipulation and User Profile Creation
